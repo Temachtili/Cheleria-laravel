@@ -19,6 +19,6 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::resource('cervezas', App\Http\Controllers\CervezaController::class)->middleware('auth');
+Route::resource('cervezas', App\Http\Controllers\CervezaController::class);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
